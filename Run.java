@@ -6,15 +6,13 @@ public class Run {
     int tss;
     Time timeModule = new Time();
     LocalDate dateOfExecution;
-    boolean isExecuted;
+    private boolean isExecuted;
+    String runType;
 
 	//constructor
-    public Run(int dur, double intens, int TSS, LocalDate dateOfCompletion, boolean isCompleted){
-        this.duration = dur;
-        this.intensity = intens;
+    public Run(int TSS, String type){
         this.tss = TSS;
-        this.dateOfExecution = dateOfCompletion;
-        this.isExecuted = isCompleted;
+        createRun(TSS, type);
     }
 
 	//get and set
@@ -45,5 +43,16 @@ public class Run {
     public void setTss(int tss) {
         this.tss = tss;
     }
-        
+
+    // methods
+    public void executeRun(){
+        this.isExecuted = true;
+        this.dateOfExecution = timeModule.getCurrentDate();
+        return;
+    }
+    private void createRun(int tss, String type){
+        this.duration = 0;
+        this.intensity = 0;
+        return;
+    }        
 }
