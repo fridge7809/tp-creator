@@ -6,5 +6,6 @@ class App {
 		newUser.executeWorkout(newRun);
 		System.out.println(newUser.atl);
 		System.out.println("hello world");
+		System.out.println("hello world");
     }
 }
