@@ -1,5 +1,4 @@
 class App {
-
     public static void main(String[] args) {
 		Time timeModule = new Time();
 		Run newRun = new Run(30, 0.8, 30, timeModule.getCurrentDate(), false);
