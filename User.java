@@ -1,8 +1,5 @@
-import java.sql.Array;
-
 public class User {
     int ftp = 0;
-    // current training load metrics (todays date)
     int atl = 0;
     int ctl = 0;
     int tsb = 0;
