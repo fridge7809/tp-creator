@@ -5,5 +5,6 @@ class App {
 		User newUser = new User(300, 0, 0);
 		newUser.executeWorkout(newRun);
 		System.out.println(newUser.atl);
+		System.out.println("hello world");
     }
 }
